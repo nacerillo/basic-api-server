@@ -3,7 +3,29 @@
 class ClothesModel {
   constructor() {
     this.id = 0;
-    this.db = []; // this represents an "in-memory" database
+    this.db = [
+      {
+        id: 1,
+        record: {
+          name: "SUPREME",
+          size: "small",
+        },
+      },
+      {
+        id: 2,
+        record: {
+          name: "Polo",
+          size: "large",
+        },
+      },
+      {
+        id: 3,
+        record: {
+          name: "Plaid",
+          size: "medium",
+        },
+      },
+    ]; // this represents an "in-memory" database
   }
 
   create(obj) {

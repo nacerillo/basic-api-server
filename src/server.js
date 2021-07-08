@@ -4,11 +4,10 @@ const express = require("express");
 const app = express();
 
 const logger = require("./middleware/logger.js");
-const foodRoutes = require("./routes/food-routes.js");
-const shirtRoutes = require("./routes/shirts-routes.js");
+const foodRoutes = require("./routes/food.js");
+const shirtRoutes = require("./routes/clothes.js");
 
 const notFound = require("./errors/404.js");
-const errors = require("./errors/500.js");
 
 app.use(express.json());
 

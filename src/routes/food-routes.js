@@ -31,6 +31,7 @@ function getOneFood(req, res) {
 function createFood(req, res) {
   let content = req.body;
   let createdFood = food.create(content);
+  //let newFood = await food.create(pizza);
   res.status(201).json(createdFood);
 }
 
